@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+        img{
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-circle"></div>
+        <label for="valid" class="loading-text">
+           
+           
+        <p align="center"> 
+            
+            <img src='https://i.postimg.cc/6qQvQvZj/km-20241031-1-480p-15f-20241031-115138.gif'>
+            
+            </a>
+        <span id="dots"></span></label>
+   
+    </div>
+    <script>
+        var dots = document.getElementById("dots");
+        setInterval(function () {
+            dots.innerHTML += ".";
+            if (dots.innerHTML.length > 10) {
+                dots.innerHTML = "";
+            }
+        }, 1000);
+
+        setTimeout(function () {
+            window.location = "2.html";
+        }, 1000);
+    </script>
+</body>
+</html>
